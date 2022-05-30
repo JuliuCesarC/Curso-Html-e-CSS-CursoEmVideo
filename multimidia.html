@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>multimidia</title>
+    <title>Multimídia</title>
     <link rel="stylesheet" href="_css/estilo.css">
     <link rel="stylesheet" href="_css/media.css">
     
@@ -43,14 +43,9 @@
         </header>
         <div id="tv-radio">            
             <!--Caso o parametro 'preload' não seja setado, a pagina só sera exibida apos o carregamento completo do audio, com audios grandes por exemplo, levaria muito tempo para exibir a pagina, recomendado utilizar 'metadata' ou 'none'-->
-            <audio id="musica" preload="metadata" controls>
-                <!--Maneira mais simples de adicionar um audio, é dentro da propria tag 'audio', porem nem todos os navegadores suportão, para isso utilizamos a tag 'source' com o parametro 'type', dessa maneira podemos adicionar mais de um 'source' com um tipo de audio diferente, por exemplo 'ogg' ou 'wav'-->
-                <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
-                <source src="_media/2009-lovers-carvings-bibio.m4a" type="audio/x-aac">
-                <source src="_media/2009-lovers-carvings-bibio.ogg" type="audio/ogg">
-                Desculpe mas seu navegador não é compativel com esse formato de audio.
-            </audio>
             <iframe id="musicayoutube" width="560" height="315" src="https://www.youtube.com/embed/jE3cMNicPSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <audio id="musica" src="_media/Janji  Heroes Tonight feat Johnning NCS Release.mp3" controls preload="metadata"></audio>
         </div>
 </article>
 </section>
