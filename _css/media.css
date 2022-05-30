@@ -8,13 +8,13 @@ audio#musica{
     display: block;
     position: relative;
     left: 573px;
-    top: 490px;
+    top: 174px;
     width: 300px;
 }
 iframe#musicayoutube{
     display: block;
     position: relative;
-    left: 70px;
-    top: 30px;
+    left: 67px;
+    top: 80px;
     width: 480px;
 }
