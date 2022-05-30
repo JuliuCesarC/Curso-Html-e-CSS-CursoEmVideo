@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/specs.css">
+    
+</head>
+<body>
+    
+    <nav id="menu">
+        <h1>Menu Principal</h1>
+        <ul type="circle">
+        <li><a href="index.html" onmouseenter="fmenu('Home.png')" onmouseout="fmenu('especificacoes.png')">Home</a></li>
+        <li><a href="specs.html" onmouseenter="fmenu('especificacoes.png')" onmouseout="fmenu('especificacoes.png')">Especificações</a></li>
+        <li><a href="fotos.html" onmouseenter="fmenu('fotos.png')" onmouseout="fmenu('especificacoes.png')">Fotos</a></li>
+        <li><a href="multimidia.html" onmouseenter="fmenu('multimidia.png')" onmouseout="fmenu('especificacoes.png')">Multimídia</a></li>
+        <li><a href="fale-conosco.html" onmouseenter="fmenu('contato.png')" onmouseout="fmenu('especificacoes.png')">Fale conosco</a></li>
+        </ul>
+    </nav>
+<div id="interface">
+        <header id="cabecalho">
+            
+        <hgroup>
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+        <img id="icone" src="_imagens/especificacoes.png" alt="">
+        
+</header>
+
+<section id="corpofull">
+    <article id="noticiaPrincipal">
+        <header id="cabecalhoArtigo">
+            <hgroup>
+            <h3>Glass > Especificações</h3>
+            <h1>Raio-X no Google Glass</h1>
+            <h2>por Gustavo Guanabara</h2>
+            <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+            </hgroup>
+        </header>
+
+    <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+ 
+        <section id="conteudo">
+            <!--Para criar regiões que é possivel clicar, é preciso utilizar a tag 'map'. No caso abaixo, utilizamos a tag map na imagem, e para isso utilizamos a tag 'usemap'-->
+            <img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa" alt="">
+            <map name="meumapa">
+                <!--Para saber a região certa na imagem, utilizamos o photoshop, assim conseguimos as cordenadas x;y para utilizarmos na tag 'area'-->
+                <area shape="rect" coords="180, 205, 270, 255" href="google-glass.html#tela" alt="" target="janela">
+                <area shape="circle" coords="158, 244, 12" href="google-glass.html#camera" alt="" target="janela">
+                <area shape="circle" coords="76,51,13" href="google-glass.html#bateria" alt="" target="janela">
+                <area shape="poly" coords="28,143,82,215,84,252,28,168" href="google-glass.html#sensores" alt="" target="janela">
+                <!--O resultado obtido é de 4 regiôes que podemos clicar e receber um texto ao lado que fala sobre o objeto ao qual clicamos. -->
+            </map>
+            <iframe src="google-glass.html" name="janela" scrolling="no" id="frame-spec" frameborder="0"></iframe>
+        </section>
+    </article>
+</section>
+
+
+<footer id="rodape">
+    <p>Copyright&copy; 2013 - by Gustavo Guanabara </br>
+    <a href="https://www.facebook.com/CursosEmVideo" target="_blank">Facebook</a> | 
+    Twitter</p> 
+    </footer>
+    </div>
+    
+    <script src="_javascript/funcoes.js"></script>
+    </body>
+    </html>

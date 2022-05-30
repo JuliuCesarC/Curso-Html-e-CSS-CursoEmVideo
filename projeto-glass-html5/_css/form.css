@@ -1,0 +1,37 @@
+form{
+    width: 500px;
+    margin: auto;
+}
+input, textarea, select{
+    font: normal 13pt Arial;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+input:hover, textarea:hover, select:hover{
+    background-color: #dddddd;
+}
+legend{
+    color: #888888;
+    font-weight: bold;
+    font-size: 15pt;
+}
+fieldset{
+    border-color: #cecece;
+    margin: 15px;
+}
+fieldset#sexo{
+    width: 150px;
+}
+
+fieldset#user{
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+}
+fieldset#address{
+    background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%;
+}
+fieldset#message{
+    background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+}
+fieldset#request{
+    background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%;
+    
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/media.css">
+    
+</head>
+<body>
+
+    <nav id="menu">
+        <h1>Menu Principal</h1>
+        <ul type="circle">
+        <li><a href="index.html" onmouseenter="fmenu('Home.png')" onmouseout="fmenu('multimidia.png')">Home</a></li>
+        <li><a href="specs.html" onmouseenter="fmenu('especificacoes.png')" onmouseout="fmenu('multimidia.png')">Especificações</a></li>
+        <li><a href="fotos.html" onmouseenter="fmenu('fotos.png')" onmouseout="fmenu('multimidia.png')">Fotos</a></li>
+        <li><a href="multimidia.html" onmouseenter="fmenu('multimidia.png')" onmouseout="fmenu('multimidia.png')">Multimídia</a></li>
+        <li><a href="fale-conosco.html" onmouseenter="fmenu('contato.png')" onmouseout="fmenu('multimidia.png')">Fale conosco</a></li>
+        </ul>
+    </nav>
+<div id="interface">
+        <header id="cabecalho">
+            
+        <hgroup>
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+        <img id="icone" src="_imagens/multimidia.png" alt="">
+        
+</header>
+<section id="corpofull">
+    <article id="noticiaPrincipal">
+        <header id="cabecalhoArtigo">
+            <hgroup>
+            <h3>Glass > Multimídia</h3>
+            <h1>Sons e Vídeos</h1>
+            <h2>por Gustavo Guanabara</h2>
+            <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+            </hgroup>
+        </header>
+        <div id="tv-radio">            
+            <!--Caso o parametro 'preload' não seja setado, a pagina só sera exibida apos o carregamento completo do audio, com audios grandes por exemplo, levaria muito tempo para exibir a pagina, recomendado utilizar 'metadata' ou 'none'-->
+            <audio id="musica" preload="metadata" controls>
+                <!--Maneira mais simples de adicionar um audio, é dentro da propria tag 'audio', porem nem todos os navegadores suportão, para isso utilizamos a tag 'source' com o parametro 'type', dessa maneira podemos adicionar mais de um 'source' com um tipo de audio diferente, por exemplo 'ogg' ou 'wav'-->
+                <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
+                <source src="_media/2009-lovers-carvings-bibio.m4a" type="audio/x-aac">
+                <source src="_media/2009-lovers-carvings-bibio.ogg" type="audio/ogg">
+                Desculpe mas seu navegador não é compativel com esse formato de audio.
+            </audio>
+            <video id="filme" preload="" controls poster="_imagens/video-mini03.jpg">
+                <source src="_media/getting-started.mp4" type="video/mp4">
+                <source src="_media/getting-started.webm" type="video/webm">
+                <source src="_media/getting-started.ogv" type="video/ogg">
+                Desculpe mas seu navegador não é compativel com esse formato de video.               
+            </video>
+        </div>
+</article>
+</section>
+<footer id="rodape">
+    <p>Copyright&copy; 2013 - by Gustavo Guanabara </br>
+    <a href="https://www.facebook.com/CursosEmVideo" target="_blank">Facebook</a> | 
+    Twitter</p> 
+    </footer>
+    </div>
+    
+    <script src="_javascript/funcoes.js"></script>
+    </body>
+    </html>
+
